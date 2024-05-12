@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import "./style.scss";
 
 export default function TodoList(){
 
@@ -50,7 +51,7 @@ export default function TodoList(){
     return (
 
         <div className="container my-5">
-            <div className="mx-auto rounded border p-4" style={{width:"600px", backgroundColor: "#08618d"}}>
+            <div className="mx-auto rounded border p-4" style={{width:"600px", backgroundColor: "#40E0D0"}}>
             <h2 className="text-white text-center mb-5">ТОДО-ЛИСТ</h2>
 
             <form className="d-flex" onSubmit={handleSubmit} >

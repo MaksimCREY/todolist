@@ -1,0 +1,89 @@
+// style.scss
+
+$main-color: #40E0D0;
+$completed-color: #87FC68;
+$delete-color: LightGray;
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+
+  .rounded {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 550px;
+    background-color: $main-color;
+    padding: 1rem;
+
+    .text-white {
+      color: white;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-5 {
+      margin-bottom: 5rem;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .form-control {
+      flex: 1;
+      margin-right: 0.5rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      background-color: white;
+      color: $main-color;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: $main-color;
+        color: white;
+      }
+    }
+
+    .todo-item {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      background-color: $delete-color;
+
+      &.completed {
+        background-color: $completed-color;
+      }
+
+      .task {
+        flex: 1;
+        font-size: 1.1rem;
+        color: #333;
+      }
+
+      .icons {
+        margin-left: auto;
+
+        i {
+          margin-right: 0.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
